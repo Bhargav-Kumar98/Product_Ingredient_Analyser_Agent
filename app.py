@@ -69,13 +69,14 @@ def main():
     
     with tab_examples:
         example_images = {
+            "🥣 Oats": "images/oats.jpeg",
             "🍫 Chocolate Bar": "images/hide_and_seek.jpg",
             "🥤 Energy Drink": "images/bournvita.jpg",
             "🥔 Potato Chips": "images/lays.jpg",
             "🧴 Shampoo": "images/shampoo.jpg"
         }
         
-        cols = st.columns(4)
+        cols = st.columns(5)
         for idx, (name, path) in enumerate(example_images.items()):
             with cols[idx]:
                 if st.button(name, use_container_width=True):
